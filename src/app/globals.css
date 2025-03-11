@@ -10,7 +10,24 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
 }
+
+@theme {
+    --breakpoint-xs: 30rem;  /* 480px */
+    --breakpoint-2xl: 90rem; /* 1440px */
+    --breakpoint-3xl: 120rem; /* 1920px */
+  }
+
+  @theme {
+    --text-mobile: 24px;
+    --text-mobile--line-height: 30px; 
+    --text-mobile--font-weight: 500; 
+    --text-botton: 16px;
+    --text-botton--line-height: 20px; 
+    --text-botton--font-weight: 500; 
+     
+  }
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -24,3 +41,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+    max-width: 375px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ 
+  
+  @media (min-width: 1440px) {
+    /* 2xl: Великі десктопи */
+    .container {
+      max-width: 1440px;
+      padding: 0 80px;
+    }
+  }
