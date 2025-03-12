@@ -42,20 +42,20 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
         </Link>
 
         {/* Кнопки "Регистрация" і "Войти" */}
-        <div className="grid grid-cols-2 gap-[16px]  w-full  mt-[114px] text-botton">
+        <div className="grid grid-cols-2 gap-[16px]  w-full  mt-[114px]     text-button-mobile uppercase">
           <Link
             href="/signup"
-            className="w-full bg-white text-[#5E47FF] text-center font-bold px-6 py-3 rounded-md hover:bg-gray-200 transition"
+            className="w-full button-mobile-menu   text-center   px-[24px] py-[16px] rounded-[3px] hover:text-[#030718]  hover:bg-background-btn-hover transition"
             onClick={toggleMenu}
           >
-            РЕГИСТРАЦИЯ
+            регистрация
           </Link>
           <Link
             href="/login"
-            className="w-full border border-white text-white text-center font-bold px-6 py-3 rounded-md hover:bg-white hover:text-[#5E47FF] transition"
+            className="w-full button-mobile-menu   text-center   px-[24px] py-[16px] rounded-[3px] hover:text-[#030718]  hover:bg-background-btn-hover   transition"
             onClick={toggleMenu}
           >
-            ВОЙТИ
+            войти
           </Link>
         </div>
       </nav>

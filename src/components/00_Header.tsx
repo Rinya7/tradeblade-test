@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="container relative ">
+    <header className="container relative bg-background">
       <div className="    mx-auto flex justify-between items-center ">
         
         {/* Логотип */}
@@ -24,22 +24,46 @@ const Header = () => {
         </div>
 
         {/* Десктопна навігація */}
-        <nav className="hidden 2xl:flex space-x-6">
-          <Link href="#features" className="text-gray-700 hover:text-blue-600">
-            Переваги
+        <nav className="hidden 2xl:flex space-x-6 uppercase">
+          <Link href="#numbers" className=" ">
+            Цыфры
           </Link>
-          <Link href="#pricing" className="text-gray-700 hover:text-blue-600">
-            Тарифи
+          <Link href="#deals" className=" ">
+            Сделки онлайн
           </Link>
-          <Link href="#contact" className="text-gray-700 hover:text-blue-600">
-            Контакти
+          <Link href="#" className=" ">
+            О компании
+          </Link>
+          <Link href="#" className=" ">
+            Как начать
+          </Link>
+          <Link href="#prices" className=" ">
+            Тарифы
+          </Link>
+          <Link href="#" className=" ">
+            FAQ
           </Link>
         </nav>
 
         {/* Десктопна кнопка */}
-        <Link href="/signup" className="hidden 2xl:flex bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-          Реєстрація
-        </Link>
+        
+        <div className="hidden 2xl:flex  text-button-header uppercase">
+          
+          <Link
+            href="/login"
+            className="w-auto mr-[12px] button-header   text-center   px-[24px] py-[11px] rounded-[3px] hover:text-[#030718]  hover:bg-background-btn-hover   transition"
+            
+          >
+            войти
+          </Link>
+          <Link
+            href="/signup"
+            className="w-full button-header   text-center   px-[24px] py-[11px] rounded-[3px] hover:text-[#030718]  hover:bg-background-btn-hover transition"
+            
+          >
+            регистрация
+          </Link>
+        </div>
 
         {/* Кнопка мобільного меню */}
         <button onClick={toggleMobileMenu} className="2xl:hidden ml-4">
